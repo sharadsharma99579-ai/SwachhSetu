@@ -1,0 +1,20 @@
+name: SwachhSetu checks
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript and run API tests
+        run: |
+          node --check frontend/js/app.js
+          node --check frontend/js/api-client.js
+          cd backend
+          npm test
