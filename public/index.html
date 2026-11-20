@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a19">
+<title>SwachhSetu · Smart Waste Management</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="manifest" href="./manifest.webmanifest">
+<script defer src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <aside class="sidebar">
+    <a href="/" class="brand"><span class="logo" aria-hidden="true">♻</span><span class="brand-word">Swachh<em>Setu</em></span></a>
+    <div><div class="side-label">WORKSPACE</div><nav class="nav" id="nav" aria-label="Main navigation"></nav></div>
+    <div class="side-bottom" id="rail-foot"></div>
+  </aside>
+  <div class="content">
+    <header class="topbar">
+      <div class="crumb">Platform / <b id="workspace-title">Overview</b></div>
+      <div class="top-actions"><span class="pill ai" id="gemini-badge">✦ Gemini AI Scanner</span><button type="button" class="userbtn" id="workspace-user" data-page="Sign in">Login / Sign Up</button></div>
+    </header>
+    <main class="main" id="main">
+      <div id="notice" role="status" aria-live="polite"></div>
+      <section id="view" aria-busy="true"><p>Loading workspace…</p></section>
+    </main>
+    <footer>SwachhSetu · Hackathon pilot</footer>
+  </div>
+</div>
+</body>
+</html>

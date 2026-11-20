@@ -1,0 +1,6 @@
+data/
+.env
+__pycache__/
+*.sqlite*
+.swachhsetu-gemini.json
+.gemini-*
